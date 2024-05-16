@@ -45,9 +45,14 @@ export default {
 </script>
 
 <style>
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(244, 103, 103, 0.3), rgba(108, 241, 108, 0.3), rgba(124, 124, 236, 0.3));
+}
 #app{
   width: 1000px;
-  height: 1000px;
+  height: 100%;
   margin: 300px auto;
   position: relative;
 }
