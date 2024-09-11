@@ -1,5 +1,8 @@
 <template>
   <div id="app" ref="app">
+    <video autoplay muted loop id="background-video">
+      <source src="./assets/malou.mp4" type="video/mp4">
+    </video>
     <timeFilp />
     <button @click="clickAll" v-if="!isAll">全屏</button>
     <!-- <CardHover /> -->
@@ -51,7 +54,7 @@ export default {
 </script>
 
 <style>
-body {
+/* body {
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -66,11 +69,29 @@ body {
   height: 100%;
   margin: 300px auto;
   position: relative;
+} */
+body {
+  margin: 0;
+  overflow: hidden;
+}
+#app {
+  position: relative;
+  top: 300px;
+  width: 100%;
+  height: 100%;
+}
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 button {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 300px;
+  top: 300px;
   z-index: 999;
 }
 </style>
