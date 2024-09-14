@@ -1,4 +1,4 @@
-
+<!-- 封装的翻牌结构 -->
 <template>
   <div class="M-Flipper" :class="[flipType, {'go': isFlipping}]">
     <div class="digital front" :class="_textClass(frontTextFromData)"></div>

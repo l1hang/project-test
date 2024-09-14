@@ -1,3 +1,4 @@
+<!-- 动态卡片 -->
 <template>
 <div id="g-container" @mousemove="handleMouseMove" @mouseout="handleMouseOut" :style="containerStyle">
     <div id="g-filter"></div>

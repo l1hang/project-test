@@ -1,3 +1,5 @@
+<!-- 翻牌器-时间 -->
+
 <template>
   <div class="FlipClock">
     <Flipper ref="flipperHour1" />

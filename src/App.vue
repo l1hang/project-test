@@ -6,16 +6,19 @@
     <timeFilp />
     <button @click="clickAll" v-if="!isAll">全屏</button>
     <!-- <CardHover /> -->
+    <!-- <FindYou /> -->
   </div>
 </template>
 
 <script>
 import timeFilp from "./components/timeFilp.vue";
+// import FindYou from "./components/FindYou.vue";
 // import CardHover from "./components/CardHover.vue";
 export default {
   components: {
     timeFilp,
     // CardHover,
+    // FindYou
   },
   name: "App",
   data() {
